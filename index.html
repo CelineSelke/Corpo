@@ -11,12 +11,51 @@
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
         </div>
+        <div class="account">
+          <span>Account <img id="account-icon" src="./images/account-head.webp"></span>
+          <div class="dropdown-content">
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="login.html#signup">Sign Up</a></li>
+                <!--update once login page exists-->
+            </ul>
+  
+          </div>
+        </div>
         <div class="search-container">
           <form action="./js/script.js">
             <input type="text" placeholder="Search..." name="search">
             <button type="submit"><img id="search-icon" src="./images/magnifying_glass_icon.png"></button>
           </form>
         </div>
+      </div>
+
+      <div class="corpora-container">
+          <h2>Your Corpora</h2>
+          <a href="corpus.html">Create New Corpus<img src="./images/plus-icon.png" id="plus"></a>
+          <!--update once corpus creation page exists-->
+          <div class="corpus-list">
+              <p id="corpus-list-variable">You have created no corpora</p>
+          </div>
+          <!--once we actually have users add list of user's corpora via js-->
+          
+      </div>
+
+      <div class="body-container">
+          <div id="popular">
+            <h2>Popular Corpora</h2>
+            <p>Most downloaded corpora of the last 7 days: </p>
+          </div>
+          <div id="about">
+              <h2>About Corpo</h2>
+              <p>
+                Corpo is a text corpus management system designed for the creation, management, and maintenance of text corpora, a type of database that is fundamental to the field of Natural Language Processing. 
+                The system includes built-in tools for organizing and searching a corpus according to document metadata and to run linguistic analysis algorithms.
+              </p>
+          </div>
+          <div id="contact">
+              <h2>Contact</h2>
+          </div>
       </div>
 </body> 
 </html>
