@@ -1,0 +1,97 @@
+#navbar {
+    background-color: gray;
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    height: 73.6px;
+}
+
+#icon {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    font-size: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color: aliceblue;
+    text-align: center;
+    display: block;
+    margin: 0px;
+    padding: 28px 33px;
+}
+
+li a:hover:not(.active) {
+    background-color: black;
+}
+
+.active {
+    background-color: #3c646c;
+}
+
+.SLink {
+    background-color: #002f49;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+#search-icon {
+    width: 10px;
+    height: 10px;
+}
+
+.search-container {
+    padding-left: 45%;
+    margin-top: 10px;
+}
+
+.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+#filt {
+    list-style-type: none;
+}
+
+#Fbox {
+    display: block;
+    float: left;
+    border-style: initial;
+    background-color: #7792a4;
+    width: 400px;
+    height: 600px;
+}
+
+#SR {
+    float: left;
+    display: block;
+    border-style: outset;
+    background-color: #7792a4;
+    width: 50%;
+    height: 700px;
+    margin-left: 25px;
+    margin-bottom: 5%;
+}
+
+#res {
+    margin-left: 10%;
+
+}
+
+h3 {
+    display: block;
+    text-align: center;
+}

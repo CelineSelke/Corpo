@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="searchStyles.css">
+    <title> Search Results</title>
+
+
+</head>
+
+<body>
+    <div id="header">
+        <ul id="navbar">
+            <li id="icon"><img src="img/corpo-logo.jpg" width="200px" height="75px"></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="search.html" class="active">Search</a></li>
+            <li style="float: right;"><a href="" class="SLink">Log in</a></li>
+            <li style="float: right;"><a href="" class="SLink">About</a></li>
+        </ul>
+        <div class="search-container">
+            <form action="./js/script.js">
+                <input type="text" placeholder="Search..." name="search">
+                <button type="submit"><img id="search-icon" src="./img/magnifying_glass_icon.png"></button>
+            </form>
+        </div>
+    </div>
+    <div id="res">
+        <!--Fliters box-->
+        <div id="Fbox">
+            <h3>Search Filters:</h3>
+            <ul id="filt">
+                <li></li>
+            </ul>
+        </div>
+
+        <!--Search Results Box-->
+        <div id="SR">
+            <h3>Your Results:</h3>
+        </div>
+    </div>
+
+</body>
+
+</html>
