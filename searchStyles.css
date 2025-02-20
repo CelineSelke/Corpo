@@ -1,0 +1,148 @@
+#navbar {
+    background-color: gray;
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    height: 73.6px;
+}
+
+#icon {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+#icon:hover {
+
+    animation-name: flip;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    font-size: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color: aliceblue;
+    text-align: center;
+    display: block;
+    margin: 0px;
+    padding: 28px 33px;
+}
+
+li a:hover:not(.active) {
+    background-color: black;
+}
+
+.active {
+    background-color: #3c646c;
+}
+
+.SLink {
+    background-color: #002f49;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+#search-icon {
+    width: 10px;
+    height: 10px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    width: 400px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+#filt {
+    list-style-type: none;
+}
+
+
+#Fbox {
+    float: left;
+    border-style: outset;
+    background-color: #7792a4;
+    width: 400px;
+    height: 100%;
+}
+
+#SR {
+    float: left;
+    border-style: outset;
+    background-color: #7792a4;
+    width: 50%;
+    height: 100%;
+    margin-left: 25px;
+    margin-bottom: 5%;
+}
+
+#res {
+    margin-left: 10%;
+    height: 700px;
+}
+
+.ResLink{
+    text-decoration: none;
+}
+
+.resultbox:hover{
+    animation: hoverfloat;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.resultbox{
+    background-color: #e9f1f3;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+h3 {
+    display: block;
+    text-align: center;
+}
+
+
+
+@keyframes hoverfloat {
+    from{
+        scale: 100%;
+    }
+    50%{
+        scale: 99%;
+        background-color: #b5bdbf;
+    }
+    to{
+        scale: 100%;
+    }
+}
+
+@keyframes flip {
+    from {
+        rotate: 0deg;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
