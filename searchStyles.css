@@ -10,6 +10,14 @@
 #icon {
     margin: 0px;
     padding: 0px;
+    position: relative;
+}
+
+#icon:hover {
+
+    animation-name: flip;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
 
 li {
@@ -49,13 +57,15 @@ body {
 }
 
 .search-container {
-    padding-left: 45%;
+    display: flex;
+    justify-content: center;
     margin-top: 10px;
 }
 
 .topnav input[type=text] {
     float: right;
     padding: 6px;
+    width: 400px;
     border: none;
     margin-top: 8px;
     margin-right: 16px;
@@ -66,32 +76,73 @@ body {
     list-style-type: none;
 }
 
+
 #Fbox {
-    display: block;
     float: left;
-    border-style: initial;
+    border-style: outset;
     background-color: #7792a4;
     width: 400px;
-    height: 600px;
+    height: 100%;
 }
 
 #SR {
     float: left;
-    display: block;
     border-style: outset;
     background-color: #7792a4;
     width: 50%;
-    height: 700px;
+    height: 100%;
     margin-left: 25px;
     margin-bottom: 5%;
 }
 
 #res {
     margin-left: 10%;
+    height: 700px;
+}
 
+.ResLink{
+    text-decoration: none;
+}
+
+.resultbox:hover{
+    animation: hoverfloat;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.resultbox{
+    background-color: #e9f1f3;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 2px;
 }
 
 h3 {
     display: block;
     text-align: center;
+}
+
+
+
+@keyframes hoverfloat {
+    from{
+        scale: 100%;
+    }
+    50%{
+        scale: 99%;
+        background-color: #b5bdbf;
+    }
+    to{
+        scale: 100%;
+    }
+}
+
+@keyframes flip {
+    from {
+        rotate: 180deg;
+    }
+
+    to {
+        rotate: 360deg;
+    }
 }
