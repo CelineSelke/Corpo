@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+<title>Corpo - Sign Up</title> 
+<link rel="stylesheet" href="./css/style-signup.css">
+</head> 
+<body> 
+    <div class="header">
+        <a href="index.html"><img id="logo" src="./images/corpo-logo.jpg"></a>
+        <div class="services-container">
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="account">
+          <span>Account <img id="account-icon" src="./images/account-head.webp"></span>
+          <div class="dropdown-content">
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="login.html#signup">Sign Up</a></li>
+                <!--update once login page exists-->
+            </ul>
+  
+          </div>
+        </div>
+        <div class="search-container">
+          <form action="./js/script.js">
+            <input type="text" placeholder="Search..." name="search">
+            <button type="submit"><img id="search-icon" src="./images/magnifying_glass_icon.png"></button>
+          </form>
+        </div>
+      </div>
+      <div id="signup-container">
+            <h2>Welcome to Corpo!</h2>
+            <h3>Enter your information to create an account and get started with Corpo</h3>
+            <div id="signup-forms">
+                <div>Email: <input type="text" placeholder="Email..." name="un"></div>
+                <div>Username: <input type="text" placeholder="Username..." name="un"></div>
+                <div>Password: <input type="text" placeholder="Password..." name="pw"></div>
+                <div>Confirm Password: <input type="text" placeholder="Password..." name="pw-confirm"></div>
+
+                <div> 
+                    <button>Create Account!</button>
+                </div>
+
+            </div>
+      </div>
+</body>
+</html>
